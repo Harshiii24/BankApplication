@@ -8,8 +8,7 @@ A simple console-based banking application written in Java that simulates basic 
 
 - [Overview](#overview)  
 - [Features](#features)  
-- [Technologies](#technologies)  
-- [Getting Started](#getting-started)  
+- [Technologies](#technologies)   
 - [Usage](#usage)  
 - [Security & Limitations](#security--limitations)  
 - [Future Improvements](#future-improvements)  
@@ -44,12 +43,50 @@ BankApp allows users to create accounts with username, password, phone number, a
 
 ---
 
-## Getting Started
+## Usage
+
+- Upon running the application, you will be prompted with the main menu:
+-Choose 1 for Existing User login
+-Choose 2 to Create a New Account
+-Account Creation requires username, password, phone number, address, and initial deposit.
+-Once logged in, you can perform:
+-Deposit: Add money to your account.
+-Withdraw: Withdraw money after PIN verification.
+-Check Balance: View your current balance after PIN verification.
+-Mini Statement: Currently a placeholder; can be enhanced.
+-Logout: Return to the main menu.
+
+-Note: After 3 incorrect login or PIN attempts, the program will terminate, simulating a 24-hour block.
+
+---
+
+## Security & Limitations
+
+-User credentials and data are stored in-memory; no persistent storage means all data is lost when the program closes.
+-Passwords are stored in plain text — not recommended for production.
+-Single user supported per session — no multi-user concurrency or database support.
+-Mini statement functionality is currently a placeholder without transaction logging.
+-Basic input validation; some edge cases may not be handled.
+
+---
+
+## Future Improvements
+
+-Implement persistent storage (file or database) for account data.
+-Secure password handling with hashing.
+-Detailed mini-statement with transaction history.
+-Multi-user support with account switching.
+-GUI interface for better usability.
+-Input validation improvements and error handling.
+
+---
 
 ### Prerequisites
 
 - Java Development Kit (JDK) 8 or higher installed on your system
 - Basic familiarity with running Java programs from the command line
+
+---
 
 ### Installation & Running
 
@@ -58,3 +95,9 @@ BankApp allows users to create accounts with username, password, phone number, a
 3. Compile the Java source code:
    ```bash
    javac BankApp.java
+
+---
+
+## Author
+
+Created by [Harshal Patil]
