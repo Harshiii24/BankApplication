@@ -62,22 +62,22 @@ BankApp allows users to create accounts with username, password, phone number, a
 
 ## Security & Limitations
 
--User credentials and data are stored in-memory; no persistent storage means all data is lost when the program closes.
--Passwords are stored in plain text — not recommended for production.
--Single user supported per session — no multi-user concurrency or database support.
--Mini statement functionality is currently a placeholder without transaction logging.
--Basic input validation; some edge cases may not be handled.
+- User credentials and data are stored **in-memory**; no persistent storage means all data is lost when the program closes.
+- Passwords are stored in **plain text** — not recommended for production environments.
+- Only a **single user** is supported per session — no multi-user concurrency or database support.
+- Mini statement functionality is currently a **placeholder** without transaction logging.
+- Basic input validation is implemented; however, some edge cases may not be handled.
 
 ---
 
 ## Future Improvements
 
--Implement persistent storage (file or database) for account data.
--Secure password handling with hashing.
--Detailed mini-statement with transaction history.
--Multi-user support with account switching.
--GUI interface for better usability.
--Input validation improvements and error handling.
+- Implement **persistent storage** (file or database) for account data.
+- Add **secure password handling** with hashing.
+- Develop a **detailed mini-statement** with full transaction history.
+- Support **multi-user accounts** with account switching.
+- Create a **GUI interface** for improved usability.
+- Enhance **input validation** and error handling.
 
 ---
 
@@ -100,4 +100,4 @@ BankApp allows users to create accounts with username, password, phone number, a
 
 ## Author
 
-Created by [Harshal Patil]
+Created by **Harshal Patil**
